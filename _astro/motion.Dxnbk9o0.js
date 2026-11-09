@@ -1,0 +1,1 @@
+function e(e){return getComputedStyle(document.documentElement).getPropertyValue(`--${e}`).trim()}function t(t){let n=e(t),r=parseFloat(n);return Number.isNaN(r)?0:n.endsWith(`ms`)?r:r*1e3}function n(t){return e(t)||`linear`}function r(){return matchMedia(`(prefers-reduced-motion: reduce)`).matches}export{n,r,t};

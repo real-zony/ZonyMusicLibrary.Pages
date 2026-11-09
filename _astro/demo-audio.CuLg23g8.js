@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["_astro/engine.CIA34vuC.js","_astro/tracks.yN1BQbqR.js"])))=>i.map(i=>d[i]);
+import{t as e}from"./preload-helper.DygEbaNj.js";var t=null,n=()=>t??=e(()=>import(`./engine.CIA34vuC.js`).then(e=>e.engine),__vite__mapDeps([0,1]));function r(e,t){let r=null,i=null,a=!1,o={stop(){a=!1,e()}};return{async toggle(s,c){r??=await n(),i===c&&r.owns(o)?(a?r.pause():r.play(),a=!a):(r.claim(o),r.load(s),r.onEnd=()=>{r.pause(),a=!1,e(),i&&t?.(i)},i=c,a=r.play()),e()},get currentId(){return i},get playing(){return a}}}export{r as t};

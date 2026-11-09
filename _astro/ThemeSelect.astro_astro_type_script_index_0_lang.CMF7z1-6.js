@@ -1,0 +1,1 @@
+import{i as e,n as t,t as n}from"./theme.CAyB_2GD.js";var r=e=>{for(let t of document.querySelectorAll(`.zm-theme button[data-choice]`))t.setAttribute(`aria-pressed`,String(t.dataset.choice===e))};r(n()),t(r),document.addEventListener(`click`,t=>{let r=t.target?.closest(`.zm-theme button[data-choice]`);if(!r)return;let i=r.dataset.choice;i!==n()&&e(i)});
